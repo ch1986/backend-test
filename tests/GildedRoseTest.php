@@ -81,6 +81,9 @@ class GildedRoseTest extends TestCase
   	$this->assertEquals(10, $items[0]->getQuality());
     }
 
+    /**
+     * @return array<string, array<int>>
+     */
     public static function backstageRules(): array {
         return [
                 'incr. 1 if sellIn > 10' => [11, 10, 11],
