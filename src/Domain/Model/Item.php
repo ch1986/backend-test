@@ -4,8 +4,8 @@ namespace Runroom\GildedRose\Domain\Model;
 
 class Item {
 
-    protected $sellIn;
-    protected $quality;
+    protected int $sellIn;
+    protected int $quality;
 
     public function __construct(int $sellIn, int $quality) {
         $this->sellIn = $sellIn;
